@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="data:image/x-icon;base64,YourBase64StringHere" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <div class="container my-5 mx-auto">
+        <h1 class="display-5 text-center my-4">Weather App</h1>
+        <form class="change-location my-4 text-center" autocomplete="off">
+            <label for="city" class="text-dark">Enter a city:</label>
+            <input type="text" name="city" class="form-control p-4">
+            <div id="alert" class="alert alert-danger"></div>
+        </form>
+        <div class="card shadow-lg rounded d-none">
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            <div class="icon btn-primary mx-auto text-center">
+                <img src="">
+            </div>
+            <div class="text-uppercase text-center details">
+                <h5 class="my-3 text-dark">City name</h5>
+                <div class="my-3 text-dark">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/validator.js"></script>
+    
+</body>
+
+</html>
